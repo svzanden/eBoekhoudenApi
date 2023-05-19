@@ -34,7 +34,7 @@ class AccountLedgerCategory {
     public function __toString()
     {
         if($this->accountLedgerCategory === null) {
-            return null;
+            return '';
         }
         return $this->accountLedgerCategory;
     }

@@ -33,3 +33,5 @@ composer.phar
 # composer.lock
 
 index.php
+/eboekhouden/nbproject/private/
+/nbproject/private/

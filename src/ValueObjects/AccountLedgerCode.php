@@ -34,7 +34,7 @@ class AccountLedgerCode {
     public function __toString()
     {
         if($this->accountLedgerCode === null) {
-            return null;
+            return '';
         }
         return $this->accountLedgerCode;
     }
