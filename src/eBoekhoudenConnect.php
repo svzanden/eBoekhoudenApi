@@ -530,9 +530,7 @@ class eBoekhoudenConnect
             $LastErrorCode = $rawresponse->$sub->ErrorMsg->LastErrorCode;
             $LastErrorDescription = $rawresponse->$sub->ErrorMsg->LastErrorDescription;
             if ($LastErrorCode <> '') {
-                echo '<strong>Er is een fout opgetreden:</strong><br>';
-                echo $LastErrorCode . ': ' . $LastErrorDescription;
-                exit();
+                throw new \Exception($LastErrorCode . ': ' . $LastErrorDescription);
             }
         }
     }
